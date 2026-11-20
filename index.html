@@ -26,7 +26,7 @@
   .katex { font-size: 1.03em; }
   canvas { display: block; max-width: 100%; }
 </style>
-</head>
+<style>.examfolder{color:#e8f3f6;background:#152334;border:1px solid #41576a;border-radius:14px;padding:18px}.examfolder h2{font-size:1.4rem;font-weight:750}.examfolder h3{font-size:1.05rem;font-weight:700;margin:16px 0 8px;color:#98edca}.examfolder details{border-top:1px solid #405062}.examfolder summary{cursor:pointer;padding:12px 0;font-weight:620}.examfolder .graded>summary{font-size:1.09rem}.examfolder .graded>div,.examfolder .miss>div{padding:0 0 14px 12px}.examfolder p,.examfolder li{margin:8px 0;line-height:1.6}.answerlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:4px 16px}.answerlist div{display:flex;gap:10px;border-bottom:1px solid #344556;padding:5px 0}.answerlist dt{color:#a9bdd0;flex:none}.examfolder svg{background:white;width:100%;max-width:400px;margin:8px 0;border-radius:8px}.examfolder button[data-choice]{background:#274d54;border:1px solid #58828b;padding:5px 10px;margin:4px;border-radius:8px}.examfolder output{display:block;color:#9eedcf}</style></head>
 <body class="min-h-screen p-3 md:p-6">
 <div class="max-w-7xl mx-auto flex flex-col gap-5">
 
@@ -58,7 +58,7 @@
         ⚡ Phần 2: Công Thức & Chứng Minh (18)
       </button>
       <button id="navSec3Btn" class="px-3.5 py-2 rounded-xl font-bold text-xs md:text-sm transition border bg-slate-700/80 text-slate-200 border-slate-600 hover:bg-slate-700">
-        🎯 Phần 3: Chữa Đề & Lỗ Hổng (1 Đề)
+        🎯 Phần 3: Chữa đề và lỗ hổng (2 đề)
       </button>
     <button id="navAsk" class="px-4 py-2 rounded-xl border border-slate-600">Câu hỏi cần hỏi</button>
     </nav>
@@ -152,28 +152,7 @@
       </div>
 
       <!-- Card 3: PHẦN 3 - CHỮA ĐỀ & LỖ HỔNG KIẾN THỨC -->
-      <div id="cardPortal3" class="group cursor-pointer bg-slate-800/95 hover:bg-slate-800 border-2 border-emerald-500/50 hover:border-emerald-400 rounded-2xl p-5 flex flex-col justify-between gap-4 transition shadow-lg">
-        <div class="space-y-3">
-          <div class="flex justify-between items-center">
-            <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-              PHẦN 3 • ĐÃ CẬP NHẬT ĐỀ 1 LAB TSA (27/40 CÂU TRÒN ĐIỂM • ~73,1 ĐIỂM)
-            </span>
-            <span class="text-2xl">🎯</span>
-          </div>
-          <h2 class="text-xl font-extrabold text-white group-hover:text-emerald-300 transition">
-            3. Chữa Đề Của Bạn & Bản Đồ Lỗ Hổng
-          </h2>
-          <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
-            Đã tích hợp <strong>toàn bộ kết quả chấm Đề 1 LAB TSA (Đề số 08 - 40 câu)</strong>: Đánh giá tổng quan, bảng 40 câu (đã cập nhật <strong>Câu 15 Đúng = 875</strong>), phân tích lỗi cần sửa, đáp án và hướng tư duy chi tiết cho từng câu!
-          </p>
-          <div class="bg-slate-900/90 border border-slate-700 rounded-xl p-3 space-y-1.5 text-xs text-slate-300">
-            <div class="font-bold text-emerald-400">Kết quả Đề 1 LAB TSA (Đã tính Câu 15 Đúng):</div>
-            <div>• <strong>Đúng tuyệt đối:</strong> 27/40 câu (67,5%) • <strong>Đúng 1 phần:</strong> 4 câu (~73,1/100 điểm)</div>
-            <div>• <strong>Phân tích chuyên sâu:</strong> 13 câu cần sửa (9 câu sai + 4 câu thiếu ý) + Câu 15</div>
-            <div>• <strong>Đầy đủ:</strong> Đáp án chuẩn • Lỗi sai cần sửa • Hướng tư duy giải nhanh</div>
-          </div>
-        </div>
-        <button id="enterSec3Btn" class="w-full py-2.5 rounded-xl font-bold text-xs md:text-sm bg-emerald-600 group-hover:bg-emerald-500 text-white transition">
+      <div id="cardPortal3" class="group cursor-pointer bg-slate-800/95 hover:bg-slate-800 border-2 border-emerald-500/50 hover:border-emerald-400 rounded-2xl p-5 flex flex-col justify-between gap-4 transition shadow-lg"><h2 class="text-xl font-bold">3. Chữa đề và lỗ hổng</h2><p>Chọn đề để xem đáp án các câu đúng và luyện lại từng câu sai.</p><button id="enterSec3Btn" class="w-full py-2.5 rounded-xl font-bold text-xs md:text-sm bg-emerald-600 group-hover:bg-emerald-500 text-white transition">
           Mở Phòng Chữa Đề & Phân Tích Lỗ Hổng ➔
         </button>
       </div>
@@ -181,7 +160,7 @@
     </div>
 
     <!-- Quick Overview Statistics Strip -->
-<a href="./de-3-toan.html" class="block p-4 rounded-xl border border-emerald-500 text-emerald-200 font-bold">Đề 3 · Kết quả 40 câu Toán và bài chữa tương tác</a>
+
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
       <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-3.5 text-center">
         <span class="text-xs text-slate-400 block">Bài giảng tương tác toàn màn hình</span>
@@ -197,7 +176,7 @@
       </div>
       <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-3.5 text-center">
         <span class="text-xs text-slate-400 block">Số đề bạn đã cung cấp</span>
-        <span id="statExamProgress" class="text-xl font-extrabold text-emerald-400 mt-0.5 block">1 Đề (27/40 • ~73,1đ)</span>
+        <span id="statExamProgress" class="text-xl font-extrabold text-emerald-400 mt-0.5 block">2 đề đã chữa</span>
       </div>
     </div>
 
@@ -368,47 +347,14 @@
   <!-- ======================================================================= -->
   <!-- VIEW 3: PHẦN 3 — CHỮA ĐỀ DO BẠN CUNG CẤP (HIỆN TẠI: 0 ĐỀ) & LỖ HỔNG     -->
   <!-- ======================================================================= -->
-  <section id="viewSec3" class="hidden flex-col gap-5">
-<a href="./de-3-toan.html" class="block p-4 rounded-xl border border-emerald-500 text-emerald-200 font-bold">Đề 3 · Kết quả 40 câu Toán và bài chữa tương tác</a>
-
-    <!-- Top Row: Knowledge Gap Diagnostic Radar/Bars by Topic -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
-      <div class="lg:col-span-7 bg-slate-800 border border-slate-700 rounded-2xl p-4 md:p-5 flex flex-col gap-3">
-        <div class="flex justify-between items-center border-b border-slate-700 pb-2.5">
-          <div>
-            <span class="text-xs font-bold uppercase text-rose-400 tracking-wider">CHẨN ĐOÁN LỖ HỔNG KIẾN THỨC TỰ ĐỘNG</span>
-            <h2 class="text-base md:text-lg font-bold text-white">
-              Bản Đồ Mảng Kiến Thức Bị Hổng & Những Ý Cần Sửa Theo Chuyên Đề
-            </h2>
-          </div>
-          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
-            Cập nhật từ 13 bài lẻ đã hỏi
-          </span>
-        </div>
-
-        <div id="knowledgeGapList" class="space-y-3">
-          <!-- Populated by JS -->
-        </div>
-      </div>
-
-      <!-- Right 5 Cols: Add New User-Provided Exam & Offline Sync -->
-      <div class="lg:col-span-5 bg-slate-800 border border-slate-700 rounded-2xl p-4 md:p-5 flex flex-col justify-between gap-4">
-        <div class="space-y-3">
-          <div class="border-b border-slate-700 pb-2.5">
-            <span class="text-xs font-bold uppercase text-emerald-400 tracking-wider">CÔNG CỤ NHẬN ĐỀ TỪ BẠN & LƯU NHẬT KÝ</span>
-            <h3 class="text-base md:text-lg font-bold text-white">
-              Đề Thi Do Bạn Cung Cấp (Hiện Tại: Chưa Có Đề Nào)
-            </h3>
-          </div>
-
-          <div class="bg-slate-900/90 border border-sky-500/40 rounded-xl p-3.5 text-xs text-slate-200 space-y-2 leading-relaxed">
-            <div class="font-bold text-sky-400">💡 Cách 1 (Gửi đề & bài làm cho tôi qua khung chat):</div>
-            <p>
-              Khi bạn làm xong một đề bất kỳ của bạn, hãy gửi đề bài (ảnh chụp hoặc file/chữ) kèm đáp án bạn chọn vào khung chat. Tôi sẽ <strong>chấm điểm, giải chi tiết từng câu sai và tự động đẩy đề đó vào danh sách bên dưới</strong>!
-            </p>
-          </div>
-
-          <!-- In-App Quick Self-Log Form -->
+  <section id="viewSec3" class="hidden flex-col gap-5"><div class="examfolder"><h2 id="gradedTitle">2 đề đã chữa</h2><details class="graded" id="de-3"><summary>Đề 3 · Tư duy Toán TSA 2027</summary><div><p>27 câu được tính trọn · 3 đúng một phần · 7 sai · 3 bỏ trống</p><h3>Câu cần chữa · 13</h3><details class="miss"><summary>Câu 3 · Đồ thị y = sin(x − 3)</summary><div><p><strong>Bài làm → đáp án</strong>　Sang trái 3 → sang phải 3</p><p>Điểm có đối số bằng 0 dịch tới đâu?</p><button type="button" data-choice="0">x = −3</button><button type="button" data-choice="1">x = 3</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Đặt x − 3 = 0 được x = 3. Tổng quát, điểm (t, sin t) thành (t + 3, sin t). Đồ thị dịch phải 3 đơn vị.</p></details></div></details><details class="miss"><summary>Câu 7 · Nguyên hàm, ý c</summary><div><p><strong>Bài làm → đáp án</strong>　Ý c: Đ → S</p><p>Đạo hàm của −cos x là gì?</p><button type="button" data-choice="1">sin x</button><button type="button" data-choice="0">−sin x</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Lấy đạo hàm để thử ngược. Nguyên hàm của 3x² + sin x là x³ − cos x + C. Bạn đúng a, b, d.</p></details></div></details><details class="miss"><summary>Câu 8 · Đếm các số không có hai chữ số lẻ kề nhau</summary><div><p><strong>Bài làm → đáp án</strong>　31/126 → 17/42</p><p>Nếu có đúng hai vị trí lẻ, có mấy cách chọn hai vị trí đó?</p><button type="button" data-choice="1">3</button><button type="button" data-choice="0">6</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Có ba cặp vị trí (1,3), (1,4), (2,4). Có 5 chữ số lẻ, 4 chữ số chẵn. Với 0, 1, 2 chữ số lẻ, số cách lần lượt là 4! = 24, 4·5·(4·3·2) = 480, 3·(5·4)·(4·3) = 720. Xác suất là 1224/(9·8·7·6) = 17/42.</p></details></div></details><details class="miss"><summary>Câu 14 · Xác suất máy phát hiện nói dối, ý c và d</summary><div><p><strong>Bài làm → đáp án</strong>　Ý c và d: S, S → Đ, Đ</p><p>Muốn tính xác suất vừa nói dối vừa bị phát hiện, cần phép nào?</p><button type="button" data-choice="1">0,68 × 0,96</button><button type="button" data-choice="0">0,68 + 0,96</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Ý c đúng vì 0,68 × 0,96 = 65,28%. Ý d cũng đúng vì xác suất nói thật và bị báo nhầm là 0,32 × 0,03 = 0,96%. Bạn đúng a, b.</p></details></div></details><details class="miss"><summary>Câu 15 · Đường chéo trong đa giác</summary><div><p><strong>Bài làm → đáp án</strong>　10 → 5</p><p>Một giao điểm trong đa giác cần bao nhiêu đỉnh làm đầu mút?</p><button type="button" data-choice="0">2</button><button type="button" data-choice="1">4</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>n(n−3)/2 = n cho n = 5. Mỗi bộ 4 đỉnh tạo một tứ giác có đúng một cặp đường chéo cắt nhau bên trong. Vậy có C(5,4) = 5 giao điểm.</p></details></div></details><details class="miss"><summary>Câu 19 · Chữ số hàng đơn vị</summary><div><p><strong>Bài làm → đáp án</strong>　Bỏ trống → 8</p><p>Chữ số cuối của 2019 mũ một số lẻ là gì?</p><button type="button" data-choice="0">1</button><button type="button" data-choice="1">9</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Lũy thừa của 3 có đuôi 3, 9, 7, 1 theo chu kỳ 4. Vì 13 chia 4 dư 1 nên 13¹³ tận cùng bằng 3. Hai hạng còn lại tận cùng bằng 6 và 9. Tổng tận cùng bằng 8.</p></details></div></details><details class="miss"><summary>Câu 20 · Trò chơi xúc xắc luân phiên</summary><div><p><strong>Bài làm → đáp án</strong>　6/11 → 36/67</p><p>Sau khi cả A và B đều trượt, ai lại được chơi trước?</p><button type="button" data-choice="1">A</button><button type="button" data-choice="0">B</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Có 5 cặp cho tổng 8 trong 36 cặp. Đặt p = 5/36, q = 31/36. Gọi W là xác suất A thắng. A thắng ngay hoặc cả hai trượt rồi quay về ban đầu, nên W = p + q²W. Do đó W = 1/(1+q) = 36/67.</p></details></div></details><details class="miss"><summary>Câu 23 · Tiết diện hình trụ, ý c</summary><div><p><strong>Bài làm → đáp án</strong>　Ý c bỏ trống → S</p><p>Trục cách một mặt phẳng cắt hình trụ bán kính 10 cm nhiều nhất bao nhiêu?</p><button type="button" data-choice="1">10 cm</button><button type="button" data-choice="0">56 cm</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Số 465/9 lớn hơn 10 nên loại ngay. Tính chính xác: chiều rộng chữ nhật là 80/56 = 10/7 cm. Nửa dây bằng 5/7 cm, do đó d = √(10² − (5/7)²) = 5√195/7 cm. Ý c sai.</p></details></div></details><details class="miss"><summary>Câu 24 · Lăng trụ xiên và hình chiếu</summary><div><p><strong>Bài làm → đáp án</strong>　Bỏ trống → Đ, S, S</p><svg viewBox="0 0 340 185" aria-label="Mặt bên hình chữ nhật ACC′A′, đường chéo A′C và đường AH vuông góc A′C"><path d="M80 155H150V15H80ZM80 15L150 155M80 155L136 127" fill="none" stroke="#23866a" stroke-width="2"/><circle cx="136" cy="127" r="3"/><text x="58" y="166">A</text><text x="156" y="166">C</text><text x="53" y="22">A′</text><text x="157" y="23">C′</text><text x="144" y="128">H</text><text x="176" y="96">BH ⟂ mặt hình</text></svg><p>Khi BH lớn nhất và AB cố định, đoạn nào nhỏ nhất?</p><button type="button" data-choice="1">AH</button><button type="button" data-choice="0">A′H</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>a đúng. Lấy ACC′A′ làm đáy phụ, thể tích lăng trụ bằng một nửa diện tích hình chữ nhật nhân BH. Khối B.ACA′ có thể tích bằng 1/3 thể tích lăng trụ. Khối A′.BCC′B′ chiếm 2/3 (phần bù là tứ diện A′.ABC có cùng thể tích với B.ACA′). b sai. Vì BH² = a² − AH², H là chân vuông góc từ A xuống A′C. Trong hình chữ nhật cạnh a và 2a, chân này khác chân từ C′. c sai vì AB và AC′ cùng qua A, khoảng cách bằng 0.</p></details></div></details><details class="miss"><summary>Câu 29 · Trọng tâm tứ diện</summary><div><p><strong>Bài làm → đáp án</strong>　Bỏ trống → Đ, Đ, Đ, S</p><svg viewBox="0 0 340 170" aria-label="Mặt cắt ABI, hai đoạn AM và BN giao nhau tại G"><path d="M35 145L155 15L285 145ZM35 145L198.33 58.33M285 145L115 58.33" stroke="#23866a" stroke-width="2" fill="none"/><text x="18" y="153">A</text><text x="290" y="154">B</text><text x="151" y="14">I</text><text x="200" y="52">M</text><text x="96" y="54">N</text><text x="154" y="102">G</text></svg><p>Trên đường nối A với trọng tâm M của mặt đối diện, AG : GM bằng bao nhiêu?</p><button type="button" data-choice="0">2 : 1</button><button type="button" data-choice="1">3 : 1</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>I là trung điểm CD nên M thuộc BI, N thuộc AI, cả hai nằm trong (ABI). Viết theo vectơ vị trí: M = (B+C+D)/3. Điểm G = (A+B+C+D)/4 = A + ¾(M−A) cũng nằm trên BN, CP, DQ do tính đối xứng. Vì vậy GM/GA = GN/GB = GP/GC = GQ/GD = 1/3. Đáp án Đ, Đ, Đ, S.</p></details></div></details><details class="miss"><summary>Câu 31 · Đếm giao điểm của đường chéo thập giác</summary><div><p><strong>Bài làm → đáp án</strong>　45 → 210</p><p>Phải chọn 4 đối tượng nào?</p><button type="button" data-choice="1">4 đỉnh</button><button type="button" data-choice="0">4 đường chéo</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Chọn 4 trong 10 đỉnh, nối hai đường chéo của tứ giác tạo bởi chúng. Mỗi giao điểm trong được đếm đúng một lần vì không có ba đường chéo đồng quy trong đa giác. C(10,4) = 210. Số 45 bằng C(10,2), đếm các cặp đỉnh. Khóa in 595.</p></details></div></details><details class="miss"><summary>Câu 37 · Phương trình vi phân</summary><div><p><strong>Bài làm → đáp án</strong>　−35/36 → −2/3</p><p>Đạo hàm của 1/f bằng gì?</p><button type="button" data-choice="0">f′/f²</button><button type="button" data-choice="1">−f′/f²</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Ta có (1/f)′ = −2x, nên 1/f(x) = −x² + C. Thay x = 2 được −9/2 = −4 + C, suy ra C = −1/2. Vậy 1/f(1) = −3/2 và f(1) = −2/3.</p></details></div></details><details class="miss"><summary>Câu 39 · Điều kiện của logarit</summary><div><p><strong>Bài làm → đáp án</strong>　−20 → 1</p><p>Điều kiện chung của hai logarit là gì?</p><button type="button" data-choice="0">x &gt; −7</button><button type="button" data-choice="1">x &gt; −1</button><output aria-live="polite"></output><details><summary>Xem lời giải</summary><p>Đổi về cơ số 2: log₂(x+7) > 2log₂(x+1). Trên miền x > −1, điều này tương đương x+7 > (x+1)², tức (x+3)(x−2) < 0. Giao điều kiện được −1 < x < 2. Hai số nguyên là 0, 1, tổng bằng 1.</p></details></div></details><h3>Câu đúng · 27</h3><dl class="answerlist"><div><dt>Câu 1</dt><dd>−1</dd></div><div><dt>Câu 2</dt><dd>Đ · Đ · S</dd></div><div><dt>Câu 4</dt><dd>2</dd></div><div><dt>Câu 5</dt><dd>Đ · Đ · Đ · S</dd></div><div><dt>Câu 6</dt><dd>4610a²</dd></div><div><dt>Câu 9</dt><dd>2</dd></div><div><dt>Câu 10</dt><dd>x < 2 (công nhận C)</dd></div><div><dt>Câu 11</dt><dd>7</dd></div><div><dt>Câu 12</dt><dd>[−1, 3]</dd></div><div><dt>Câu 13</dt><dd>S · S · S · S</dd></div><div><dt>Câu 16</dt><dd>(5/2, 4)</dd></div><div><dt>Câu 17</dt><dd>(−2, 2, −7)</dd></div><div><dt>Câu 18</dt><dd>A theo khóa · giả thiết mâu thuẫn</dd></div><div><dt>Câu 21</dt><dd>a²</dd></div><div><dt>Câu 22</dt><dd>324</dd></div><div><dt>Câu 25</dt><dd>−15/4</dd></div><div><dt>Câu 26</dt><dd>20</dd></div><div><dt>Câu 27</dt><dd>S · S · S</dd></div><div><dt>Câu 28</dt><dd>10 phút</dd></div><div><dt>Câu 30</dt><dd>2a − 4</dd></div><div><dt>Câu 32</dt><dd>S · S · Đ · Đ</dd></div><div><dt>Câu 33</dt><dd>−ln(2)/2ˣ</dd></div><div><dt>Câu 34</dt><dd>±π/6 + kπ</dd></div><div><dt>Câu 35</dt><dd>x − 2y + z = 0</dd></div><div><dt>Câu 36</dt><dd>5</dd></div><div><dt>Câu 38</dt><dd>4</dd></div><div><dt>Câu 40</dt><dd>4</dd></div></dl><details><summary>Đối chiếu các chỗ lệch giữa đề và khóa trang 37</summary><ul>
+<li>5b: mỗi chu kỳ khối lượng giảm một nửa nên q = 0,5. Công nhận Đúng.</li>
+<li>6: A và C cùng ghi 4610a². Hai số hạng cộng lại là −250a² + 4860a². Công nhận A.</li>
+<li>10: đề dùng dấu &lt;. Tại x = 2 hai vế bằng nhau, vế trái tăng nghiêm ngặt nên tập nghiệm là (−∞, 2). Công nhận C theo khóa vì đề thiếu phương án chính xác.</li>
+<li>13d: chênh cao sau một phút là (500/60)sin15° ≈ 2,157 km, làm tròn thành 2,2. Bạn chọn Sai là đúng.</li>
+<li>18: công nhận A theo khóa. Nếu O là tâm đáy thì SO vuông góc đáy. Hình chiếu của SC lên AC là OC có độ dài khác 0. Do AI nằm trên AC, giả thiết AI vuông góc SC mâu thuẫn với hình.</li>
+<li>27b: tham số hóa d rồi thế vào (P) cho 22 + 2t = 0. Suy ra t = −11 và y = 3 + 2t = −19. Bạn chọn Sai là đúng.</li>
+<li>31: có 210 giao điểm bên trong. Xem bài chữa ở dưới.</li></ul></details></div></details><details class="graded" id="de-1"><summary>Đề 1 LAB TSA · Đề số 08</summary><div><p>Bản chữa đã lưu · 27 câu đúng trọn</p><h3>Câu cần chữa · 13</h3><details class="miss"><summary>Câu 1 · Mũ – Logarit</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　76 → 68</p><p>Đặt $t = \log_2 x$, giải phương trình bậc hai ra $t_1 = 6,\ t_2 = 2 \Rightarrow x_1 = 2^6 = 64,\ x_2 = 2^2 = 4$. Tổng các nghiệm là $64 + 4 = \mathbf{68}$. Mẹo phòng thi: Với câu điền số, luôn bấm máy kiểm tra lại phép cộng cuối cùng!</p></div></details><details class="miss"><summary>Câu 2 · Tọa độ Oxyz</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　9 → 6</p><p>1) Pháp tuyến $(P)$: $\vec{n}_P = [\vec{a}, \vec{b}] = (-1; 2; 2) \Rightarrow \vec{n}_P = (1; -2; -2)$. Mặt phẳng $(P)$ đi qua $A, B$ (hoặc theo điều kiện đề): $x - 2y - 2z + 6 = 0$.<br>2) Vì $\triangle MAB$ vuông cân tại $M$ nên $S_{\triangle MAB} = \frac{1}{2}MA^2 = \frac{1}{4}(AB^2 + 2MI^2)$ đạt Min khi $MI \perp (P)$ (với $I$ là trung điểm $AB$). Tìm hình chiếu của $I$ lên $(P)$ được $M(2; 2; 2) \Rightarrow a + b + c = 2 + 2 + 2 = \mathbf{6}$.</p></div></details><details class="miss"><summary>Câu 4 · Cấp số nhân & Hình hộp</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　3141 → 469 (hoặc 1141 theo V=343)</p><p>Gọi 3 kích thước nguyên của hình hộp là $a, b, c$ lập thành CSN ($ac = b^2$).<br>• Từ thể tích $V = abc = b^3 \Rightarrow b = \sqrt[3]{V}$.<br>• Vì $a, b, c \in \mathbb{Z}^+$ đôi một khác nhau và $ac = b^2$, chọn $a = 1,\ c = b^2$.<br>• Thay vào công thức diện tích toàn phần $S_{tp} = 2(ab + bc + ca) = 2(b + b^3 + b^2)$, rồi cộng theo đúng yêu cầu đề.</p></div></details><details class="miss"><summary>Câu 5 · Phương trình Mũ – Logarit</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　Đ - S - S → Đ - Đ - S</p><p>Khi xét số nghiệm của phương trình tích chứa logarit (ĐKXĐ: $x > 0$):<br>• Bước 1: Đặt ĐKXĐ chặt chẽ cho biểu thức trong $\ln$.<br>• Bước 2: Giải từng nhân tử bằng $0$. Để phương trình có duy nhất 1 nghiệm, ngoài trường hợp $\Delta = 0$, phải xét thêm giá trị $m$ làm cho 2 nghiệm <strong>trùng nhau</strong> $\Rightarrow$ Ý 2 là <strong>Đúng</strong>!</p></div></details><details class="miss"><summary>Câu 8 · Khối cầu & Đa diện</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　32/9 → 8 (hoặc 27)</p><p>Tỷ số thể tích của hai khối cầu luôn bằng <strong>lập phương tỷ số bán kính</strong>: $$\frac{V_1}{V_2} = \left(\frac{R_1}{R_2}\right)^3$$• Nếu $R_1 = 2R_2 \Rightarrow \frac{V_1}{V_2} = 2^3 = \mathbf{8}$.<br>• Nếu là cầu ngoại tiếp và nội tiếp tứ diện đều ($R = 3r$) $\Rightarrow \frac{V_1}{V_2} = 3^3 = \mathbf{27}$.</p></div></details><details class="miss"><summary>Câu 21 · Tổ hợp đối xứng 3D</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　120 → 30</p><p><strong>Công thức chuẩn sơn 6 mặt hình lập phương bằng 6 màu khác nhau:</strong><br>• Cách 1 (Cố định mặt đáy): Đặt mặt màu số 1 nằm ở đáy. Mặt đối diện (nắp trên) có $\mathbf{5}$ cách chọn màu. 4 mặt bên còn lại xếp quanh 1 vòng tròn (hoán vị vòng quanh 4 phần tử) có $(4-1)! = 3! = \mathbf{6}$ cách. Vậy có $5 \times 6 = \mathbf{30}$ cách!<br>• Cách 2 (Chia nhóm đối xứng quay): Một hình lập phương có $6 \times 4 = 24$ tư thế đặt trong không gian trùng khít lên nhau $\Rightarrow \dfrac{6!}{24} = \dfrac{720}{24} = \mathbf{30}$ cách.</p></div></details><details class="miss"><summary>Câu 23 · Phương trình Lượng giác</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　Đ - Đ - S → S - Đ - S</p><p>Với phương trình phân thức lượng giác $\dfrac{\sin 3x}{2\cos x + 1} = 0$:<br>• Điều kiện xác định: $\cos x \ne -\frac{1}{2} \iff x \ne \pm\frac{2\pi}{3} + k2\pi$.<br>• Mẹo siêu nhanh: Vì $\sin 3x = 3\sin x - 4\sin^3 x = \sin x(3 - 4\sin^2 x) = \sin x(4\cos^2 x - 1) = \sin x(2\cos x - 1)(2\cos x + 1)$, nên khi rút gọn nhân tử $(2\cos x + 1)$ với mẫu số (với $\cos x \ne -1/2$), phương trình chỉ còn $\sin x(2\cos x - 1) = 0$! Do đó Ý 1 là <strong>Sai</strong>.</p></div></details><details class="miss"><summary>Câu 31 · Số học – Chia hết</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　4 → 5</p><p><strong>Phương pháp giải tự luận 10 giây không bao giờ sót nghiệm:</strong><br>Ta có $\overline{ab} = 10a + b \;\vdots\; (a\cdot b)$ (với $a, b \in \{1,\dots,9\}$).<br>• Vì $10a + b \;\vdots\; a \Rightarrow b \;\vdots\; a$. Đặt $b = m\cdot a$ ($m \in \mathbb{Z}^+$).<br>• Thay vào điều kiện chia hết: $(10a + ma) \;\vdots\; (a \cdot ma) \iff (10 + m) \;\vdots\; (m\cdot a) \Rightarrow (10 + m) \;\vdots\; m \Rightarrow 10 \;\vdots\; m \Rightarrow m \in \{1; 2; 5\}$ (vì $b \le 9$).<br>• Xét 3 giá trị của $m$:<br>  + $m = 1 \ (b = a)$: $(11) \;\vdots\; a \Rightarrow a = 1 \Rightarrow$ Số $\mathbf{11}$.<br>  + $m = 2 \ (b = 2a)$: $(12) \;\vdots\; (2a) \iff 6 \;\vdots\; a \Rightarrow a \in \{1; 2; 3\}$ ($a=6 \Rightarrow b=12$ loại) $\Rightarrow$ Các số $\mathbf{12,\ 24,\ 36}$.<br>  + $m = 5 \ (b = 5a)$: $(15) \;\vdots\; (5a) \iff 3 \;\vdots\; a \Rightarrow a = 1$ ($a=3 \Rightarrow b=15$ loại) $\Rightarrow$ Số $\mathbf{15}$.<br>Vậy có tất cả <strong>5 số</strong>: $\mathbf{11,\ 12,\ 15,\ 24,\ 36}$!</p></div></details><details class="miss"><summary>Câu 32 · Góc & Tích vô hướng</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　√3/2 → 0,75 (3/4)</p><p>Áp dụng công thức $\cos(\vec{a}, \vec{b}) = \dfrac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|} = \dfrac{6}{8} = \dfrac{3}{4} = \mathbf{0,75}$. Trong bài thi TSA dạng điền số trên máy tính, luôn đổi phân số thập phân hữu hạn ra dạng số thập phân $0,75$!</p></div></details><details class="miss"><summary>Câu 33 · Khảo sát Hàm hợp</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　Đ - Đ - S - S → Đ - S - Đ - S</p><p>Khi xét cực trị hàm hợp $g(x) = f(u(x))$: giải $g'(x) = u'(x)\cdot f'(u(x)) = 0$. Chỉ những nghiệm <strong>đơn hoặc bội lẻ</strong> làm $g'(x)$ đổi dấu mới là điểm cực trị (bỏ qua điểm tiếp xúc của đồ thị $f'(t)$ với trục hoành) $\Rightarrow$ Ý 2 Sai, Ý 3 Đúng.</p></div></details><details class="miss"><summary>Câu 35 · Tính đơn điệu Dãy số</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　Đ - S - Đ - Đ → Đ - S - S - Đ</p><p>Xét dãy số $u_n = \dfrac{2n+1}{n-3} = 2 + \dfrac{7}{n-3}$ ($n \in \mathbb{N}^*,\ n \ne 3$):<br>• Khi $n \in \{1; 2\}$: $u_1 = -1,5$; $u_2 = -5$ (nằm dưới đường tiệm cận $y = 2$).<br>• Khi $n \ge 4$: $u_4 = 9,\ u_5 = 5,5,\ u_6 = 4,33\dots$ (nằm trên đường tiệm cận $y = 2$).<br>Vì $u_4 = 9 > u_2 = -5$ nên dãy số <strong>KHÔNG phải là dãy giảm trên toàn bộ tập xác định</strong> (nó chỉ giảm kể từ $n = 4$ trở đi). Do đó Ý 3 là <strong>Sai</strong>!</p></div></details><details class="miss"><summary>Câu 39 · Nguyên hàm – Tích phân</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　1 (B) → -5 (A)</p><p>Theo định lý Newton – Leibniz: $$\int_{-1}^{2} f(x)\,\mathrm{d}x = F(2) - F(-1) = -\big[F(-1) - F(2)\big] = -3$$Khi đề bài cho $F(a) - F(b)$, việc đầu tiên trong 1 giây là <strong>kiểm tra xem $a$ là cận trên hay cận dưới</strong> của tích phân cần tính! Thay $F(2) - F(-1) = -3$ vào biểu thức tích phân ra ngay đáp án <strong>A. $-5$</strong>.</p></div></details><details class="miss"><summary>Câu 40 · Cấp số cộng & Số nguyên lẻ</summary><div><p><strong>Bài làm → đáp án đã lưu</strong>　Đ - Đ - S → S - S - Đ</p><p><strong>Phân tích bản chất Cấp số cộng gồm các số nguyên lẻ:</strong><br>• <strong>Ý 1 (Sai):</strong> Công sai $d = u_2 - u_1$ là hiệu của hai số nguyên lẻ nên $d$ bắt buộc phải là <strong>số nguyên chẵn</strong> ($d = 2k$), không thể là số lẻ!<br>• <strong>Ý 2 (Sai):</strong> Vì các số nguyên lẻ có thể nhận giá trị <strong>âm tùy ý</strong> (khi $d < 0$ hoặc $u_1 < 0$), nên tổng $S_n$ không bắt buộc dương.<br>• <strong>Ý 3 (Đúng):</strong> Khai triển theo $u_1$ lẻ và $d = 2k$ chẵn kiểm tra tính chia hết / chẵn lẻ của tổng $S_n$ thỏa mãn.</p></div></details><h3>Câu đúng · 27</h3><dl class="answerlist"><div><dt>Câu 3</dt><dd>50</dd></div><div><dt>Câu 6</dt><dd>(3; 4)</dd></div><div><dt>Câu 7</dt><dd>61</dd></div><div><dt>Câu 9</dt><dd>20/21</dd></div><div><dt>Câu 10</dt><dd>4x+2y+z-7=0</dd></div><div><dt>Câu 11</dt><dd>S - Đ - S</dd></div><div><dt>Câu 12</dt><dd>√3/3</dd></div><div><dt>Câu 13</dt><dd>-1</dd></div><div><dt>Câu 14</dt><dd>2</dd></div><div><dt>Câu 15</dt><dd>875</dd></div><div><dt>Câu 16</dt><dd>254</dd></div><div><dt>Câu 17</dt><dd>0,842</dd></div><div><dt>Câu 18</dt><dd>8,25; 7</dd></div><div><dt>Câu 19</dt><dd>92/3</dd></div><div><dt>Câu 20</dt><dd>5</dd></div><div><dt>Câu 22</dt><dd>10,6</dd></div><div><dt>Câu 24</dt><dd>22,9</dd></div><div><dt>Câu 25</dt><dd>8190</dd></div><div><dt>Câu 26</dt><dd>-1</dd></div><div><dt>Câu 27</dt><dd>15/2</dd></div><div><dt>Câu 28</dt><dd>0,5</dd></div><div><dt>Câu 29</dt><dd>3,12</dd></div><div><dt>Câu 30</dt><dd>-9</dd></div><div><dt>Câu 34</dt><dd>29</dd></div><div><dt>Câu 36</dt><dd>7/30</dd></div><div><dt>Câu 37</dt><dd>67°</dd></div><div><dt>Câu 38</dt><dd>216</dd></div></dl></div></details></div><details class="examfolder"><summary>Nhật ký luyện tập cá nhân</summary><!-- In-App Quick Self-Log Form -->
           <div class="bg-slate-900 border border-slate-700 rounded-xl p-3.5 space-y-2.5">
             <div class="text-xs font-bold text-amber-400">
               ✍️ Cách 2: Tự thêm nhanh 1 đề bạn vừa làm vào sổ theo dõi
@@ -452,38 +398,7 @@
             <button id="saveExamLogBtn" class="w-full py-2 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition">
               💾 Lưu Kết Quả Chữa Đề & Cập Nhật Lỗ Hổng
             </button>
-            <div id="saveLogToast" class="hidden text-xs font-semibold text-emerald-400 text-center"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Row: Comprehensive Evaluation & Full 40-Question Review of Exam 1 -->
-    <div class="bg-slate-800 border border-slate-700 rounded-2xl p-4 md:p-5 flex flex-col gap-5">
-      <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-700 pb-3">
-        <div>
-          <span class="text-xs font-bold uppercase text-emerald-400 tracking-wider">PHÒNG CHỮA ĐỀ CHI TIẾT • ĐÃ CẬP NHẬT CÂU 15 ĐÚNG (875)</span>
-          <h3 class="text-base md:text-xl font-extrabold text-white mt-0.5">
-            Đánh Giá Toàn Diện Đề 1 LAB TSA (Đề Số 08) — Lỗi Cần Sửa, Đáp Án & Hướng Tư Duy
-          </h3>
-        </div>
-        <button id="clearSavedExamsBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-slate-300">
-          🔄 Khôi phục mặc định Đề 1
-        </button>
-      </div>
-
-      <!-- Exam Pills Grid -->
-      <div class="flex flex-wrap gap-2" id="exam20Grid">
-        <!-- Populated by JS -->
-      </div>
-
-      <!-- Selected Exam Review Detail Box -->
-      <div id="selectedExamReviewBox" class="bg-slate-900 border border-slate-700 rounded-2xl p-4 md:p-5 flex flex-col gap-5">
-        <!-- Populated by JS -->
-      </div>
-    </div>
-
-  </section>
+            <div id="saveLogToast" class="hidden text-xs font-semibold text-emerald-400 text-center"></div></div><div id="personalRecords"></div><button id="clearSavedExamsBtn">Khôi phục nhật ký mặc định</button></details></section>
 
   <!-- Hidden compatibility buttons so check_web_app.py --previous reports 0 warnings -->
     <div class="hidden" aria-hidden="true">
@@ -1767,295 +1682,30 @@ function setExam1TableFilter(f) {
 }
 
 function renderSec3() {
-  // 1. Render Knowledge Gap Bars
-  const gapContainer = document.getElementById('knowledgeGapList');
-  gapContainer.innerHTML = '';
-
-  gapTracker.forEach(g => {
-    const barColor = g.mastery < 75 ? "bg-amber-500" : "bg-emerald-500";
-    const div = document.createElement('div');
-    div.className = "bg-slate-900 border border-slate-700 rounded-xl p-3.5 space-y-2";
-    div.innerHTML = `
-      <div class="flex flex-wrap justify-between items-center gap-2">
-        <span class="text-xs md:text-sm font-bold text-white">${g.name}</span>
-        <span class="text-xs font-bold ${g.mastery < 75 ? 'text-amber-400' : 'text-emerald-400'}">Độ vững: ${g.mastery}% • ${g.status}</span>
-      </div>
-      <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-        <div class="h-full ${barColor}" style="width: ${g.mastery}%"></div>
-      </div>
-      <ul class="list-disc pl-5 text-xs text-slate-300 space-y-1">
-        ${g.mistakes.map(m => `<li>${m}</li>`).join('')}
-      </ul>
-    `;
-    gapContainer.appendChild(div);
-  });
-
-  // Update header badge and home stat
-  const count = userSubmittedExams.length;
-  document.getElementById('statExamProgress').textContent = count === 1 ? "1 Đề (27/40 • ~73,1đ)" : `${count} Đề đã chữa`;
-  document.getElementById('navSec3Btn').textContent = `🎯 Phần 3: Chữa Đề & Lỗ Hổng (${count} Đề)`;
-
-  const grid20 = document.getElementById('exam20Grid');
-  const reviewBox = document.getElementById('selectedExamReviewBox');
-  grid20.innerHTML = '';
-
-  userSubmittedExams.forEach((ex, idx) => {
-    const isSel = idx === selectedExamIdx;
-    const btn = document.createElement('button');
-    btn.className = isSel
-      ? "px-4 py-2 rounded-xl text-xs font-extrabold border-2 bg-sky-600 text-white border-white shadow"
-      : "px-4 py-2 rounded-xl text-xs font-bold border bg-emerald-950/60 text-emerald-300 border-emerald-500/50 hover:bg-emerald-900/60";
-    btn.textContent = `✓ ${ex.title}`;
-    btn.addEventListener('click', () => {
-      selectedExamIdx = idx;
-      renderSec3();
-    });
-    grid20.appendChild(btn);
-  });
-
-  const curEx = userSubmittedExams[selectedExamIdx] || userSubmittedExams[0];
-
-  if (curEx.id === "exam_lab_01" || selectedExamIdx === 0) {
-    // Filter focus cards (13 questions needing attention + Câu 15)
-    const focusQuestions = exam1Questions.filter(item => {
-      if (exam1CardFilter === "wrong") return item.status === "wrong";
-      if (exam1CardFilter === "partial") return item.status === "partial";
-      if (exam1CardFilter === "q15") return item.q === 15;
-      return item.status === "wrong" || item.status === "partial" || item.q === 15;
-    });
-
-    // Filter 40-question table
-    const tableQuestions = exam1Questions.filter(item => {
-      if (exam1TableFilter === "fix") return item.status === "wrong" || item.status === "partial";
-      if (exam1TableFilter === "correct") return item.status === "correct";
-      return true;
-    });
-
-    reviewBox.innerHTML = `
-      <!-- Top Score Summary Banner -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
-        <div class="bg-emerald-950/40 border border-emerald-500/50 rounded-xl p-3.5 text-center">
-          <span class="text-xs text-emerald-300 font-semibold block">Câu Đúng Tuyệt Đối (Đã cộng Câu 15)</span>
-          <span class="text-xl md:text-2xl font-extrabold text-emerald-400 mt-1 block">27 / 40 câu (67,5%)</span>
-          <span class="text-[11px] text-slate-300">Câu 15 = 875 đã khôi phục chuẩn</span>
-        </div>
-        <div class="bg-amber-950/40 border border-amber-500/50 rounded-xl p-3.5 text-center">
-          <span class="text-xs text-amber-300 font-semibold block">Đúng Một Phần (Câu Đúng/Sai)</span>
-          <span class="text-xl md:text-2xl font-extrabold text-amber-400 mt-1 block">4 / 40 câu</span>
-          <span class="text-[11px] text-slate-300">Câu 5 (2/3), 23 (2/3), 33 (2/4), 35 (3/4)</span>
-        </div>
-        <div class="bg-rose-950/40 border border-rose-500/50 rounded-xl p-3.5 text-center">
-          <span class="text-xs text-rose-300 font-semibold block">Câu Sai Cần Sửa Ngay</span>
-          <span class="text-xl md:text-2xl font-extrabold text-rose-400 mt-1 block">9 / 40 câu</span>
-          <span class="text-[11px] text-slate-300">Câu 1, 2, 4, 8, 21, 31, 32, 39, 40</span>
-        </div>
-        <div class="bg-sky-950/40 border border-sky-500/50 rounded-xl p-3.5 text-center">
-          <span class="text-xs text-sky-300 font-semibold block">Điểm Quy Đổi TSA Ước Tính</span>
-          <span class="text-xl md:text-2xl font-extrabold text-sky-400 mt-1 block">~73,1 / 100 điểm</span>
-          <span class="text-[11px] text-slate-300">Tương đương ~29,25 / 40 điểm thô</span>
-        </div>
-      </div>
-
-      <!-- Comprehensive Evaluation of First Practice Exam -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <div class="bg-slate-950 border border-emerald-500/40 rounded-xl p-4 space-y-2">
-          <div class="text-xs font-extrabold uppercase text-emerald-400 tracking-wider">
-            🌟 1. Điểm Sáng Rất Lớn Ở Đề Đầu Tiên
-          </div>
-          <p class="text-xs md:text-sm text-slate-200 leading-relaxed">
-            Ngay ở đề đầu tiên, bạn đã giải đúng trọn vẹn hàng loạt câu <strong>Vận dụng & Vận dụng cao</strong> khó nhất đề: <strong>Câu 15 (875 - dãy lượng giác ghép cặp)</strong>, <strong>Câu 22 (10,6 - tối ưu thực tế)</strong>, <strong>Câu 24 (22,9)</strong>, <strong>Câu 29 (3,12)</strong>, <strong>Câu 34 (29)</strong>, <strong>Câu 36 (7/30 - xác suất có điều kiện)</strong>, <strong>Câu 37 (67°)</strong>, <strong>Câu 38 (216)</strong>. Điều này chứng tỏ nền tảng tư duy giải quyết bài toán khó của bạn rất tốt!
-          </p>
-        </div>
-
-        <div class="bg-slate-950 border border-rose-500/40 rounded-xl p-4 space-y-2">
-          <div class="text-xs font-extrabold uppercase text-rose-400 tracking-wider">
-            ⚠️ 2. Ba Nhóm Lỗi Làm Rơi Điểm Đáng Tiếc
-          </div>
-          <ul class="list-disc pl-4 text-xs md:text-sm text-slate-200 space-y-1 leading-relaxed">
-            <li><strong>Lỗi tính nhẩm & ghi đáp án (3 câu):</strong> Cộng nhầm $64+4=76$ (Câu 1), ghi $\sqrt{3}/2$ thay vì $0,75$ (Câu 32), nhầm tọa độ hình chiếu $M(2;2;2)$ (Câu 2).</li>
-            <li><strong>Bẫy ĐKXĐ, đảo cận & tập hợp số (5 câu):</strong> Quên nghiệm trùng (Câu 5), quên ĐKXĐ mẫu lượng giác (Câu 23), quên điểm gián đoạn $n=3$ (Câu 35), bẫy đảo cận $F(-1)-F(2)$ (Câu 39), bẫy số nguyên lẻ âm (Câu 40).</li>
-            <li><strong>Thiếu công thức đặc thù 3D & số học (5 câu):</strong> Sơn lập phương chia 24 (Câu 21), đếm sót ước số (Câu 31), tỷ số cầu $(R/r)^3$ (Câu 8), CSN hình hộp (Câu 4).</li>
-          </ul>
-        </div>
-
-        <div class="bg-slate-950 border border-sky-500/40 rounded-xl p-4 space-y-2">
-          <div class="text-xs font-extrabold uppercase text-sky-400 tracking-wider">
-            🚀 3. Chiến Thuật Bứt Tốc Lên 34–36/40 Ở Đề 2
-          </div>
-          <ul class="list-disc pl-4 text-xs md:text-sm text-slate-200 space-y-1 leading-relaxed">
-            <li><strong>Quy tắc 3 giây cho câu Điền số:</strong> Bấm máy lại phép cộng/trừ cuối cùng và luôn điền dạng số thập phân chuẩn ($0,75$).</li>
-            <li><strong>Quy tắc kiểm tra ĐKXĐ & Cận tích phân:</strong> Khoanh tròn cận tích phân $\int_a^b$ xem đề cho $F(b)-F(a)$ hay $F(a)-F(b)$; kiểm tra nghiệm mẫu và điểm gián đoạn của dãy số.</li>
-            <li><strong>Chỉ cần khắc phục 8 lỗi cơ bản trên</strong>, điểm số của bạn ở Đề 2 sẽ nhảy vọt lên mốc <strong>34–36/40 câu (85+ điểm TSA)</strong>!</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Detailed Cards for All 13 Mistakes/Partials + Question 15 -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 flex flex-col gap-4">
-        <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-800 pb-3">
-          <div>
-            <h4 class="text-sm md:text-base font-extrabold text-amber-400">
-              🔍 Phân Tích Chi Tiết Từng Câu Cần Sửa (Lỗi Sai • Đáp Án Chuẩn • Hướng Tư Duy Giải Nhanh)
-            </h4>
-            <p class="text-xs text-slate-400">
-              Bấm các nút lọc bên phải để xem riêng 9 câu sai, 4 câu thiếu ý Đúng/Sai hoặc kiểm tra lại Câu 15 (875)
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <button onclick="setExam1CardFilter('all_focus')" class="px-3 py-1.5 rounded-lg text-xs font-bold ${exam1CardFilter === 'all_focus' ? 'bg-amber-500 text-slate-950' : 'bg-slate-800 text-slate-300 border border-slate-700'}">
-              Tất cả 14 câu trọng điểm
-            </button>
-            <button onclick="setExam1CardFilter('wrong')" class="px-3 py-1.5 rounded-lg text-xs font-bold ${exam1CardFilter === 'wrong' ? 'bg-rose-600 text-white' : 'bg-slate-800 text-rose-300 border border-slate-700'}">
-              ✗ 9 Câu Sai cần sửa
-            </button>
-            <button onclick="setExam1CardFilter('partial')" class="px-3 py-1.5 rounded-lg text-xs font-bold ${exam1CardFilter === 'partial' ? 'bg-amber-600 text-white' : 'bg-slate-800 text-amber-300 border border-slate-700'}">
-              ⚠️ 4 Câu Đúng 1 phần
-            </button>
-            <button onclick="setExam1CardFilter('q15')" class="px-3 py-1.5 rounded-lg text-xs font-bold ${exam1CardFilter === 'q15' ? 'bg-emerald-600 text-white' : 'bg-slate-800 text-emerald-300 border border-slate-700'}">
-              ✓ Câu 15 (875 - Đã khôi phục)
-            </button>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          ${focusQuestions.map(item => {
-            const badgeCls = item.status === 'correct'
-              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-              : (item.status === 'partial' ? 'bg-amber-500/20 text-amber-300 border-amber-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40');
-            const badgeTxt = item.status === 'correct'
-              ? '✓ ĐÃ KHÔI PHỤC ĐÚNG'
-              : (item.status === 'partial' ? '⚠️ ĐÚNG 1 PHẦN (CẦN SỬA 1 Ý)' : '✗ CÂU SAI CẦN SỬA');
-            return `
-              <div class="bg-slate-900 border border-slate-700 rounded-xl p-4 flex flex-col justify-between gap-3">
-                <div class="space-y-2.5">
-                  <div class="flex flex-wrap justify-between items-center gap-2">
-                    <span class="text-xs font-extrabold px-2.5 py-1 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">
-                      Câu ${item.q} • ${item.type} • ${item.topic}
-                    </span>
-                    <span class="text-xs font-bold px-2.5 py-1 rounded-lg border ${badgeCls}">
-                      ${badgeTxt}
-                    </span>
-                  </div>
-
-                  <div class="grid grid-cols-2 gap-2 bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-xs">
-                    <div>
-                      <span class="text-slate-400 block">Bài làm của bạn:</span>
-                      <strong class="${item.status === 'correct' ? 'text-emerald-400' : 'text-rose-400'} text-sm">${item.userAns}</strong>
-                    </div>
-                    <div>
-                      <span class="text-slate-400 block">Đáp án chuẩn:</span>
-                      <strong class="text-emerald-400 text-sm">${item.correctAns}</strong>
-                    </div>
-                  </div>
-
-                  <div class="bg-rose-950/30 border-l-4 border-rose-500 p-2.5 rounded-r-lg text-xs text-slate-200 leading-relaxed">
-                    <strong class="text-rose-400 uppercase block mb-0.5">⚠️ Chẩn đoán lỗi / Điểm cần lưu ý:</strong>
-                    ${item.mistake}
-                  </div>
-
-                  <div class="bg-emerald-950/30 border-l-4 border-emerald-500 p-2.5 rounded-r-lg text-xs text-slate-200 leading-relaxed">
-                    <strong class="text-emerald-400 uppercase block mb-0.5">💡 Hướng tư duy & Lời giải chuẩn:</strong>
-                    ${item.thinking}
-                  </div>
-                </div>
-              </div>
-            `;
-          }).join('')}
-        </div>
-      </div>
-
-      <!-- Full 40-Question Interactive Scorecard Table -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3">
-        <div class="flex flex-wrap justify-between items-center gap-2">
-          <div>
-            <h4 class="text-sm md:text-base font-extrabold text-white">
-              📋 Bảng Điểm Toàn Bộ 40 Câu — Đề 1 LAB TSA (Đề Số 08)
-            </h4>
-            <p class="text-xs text-slate-400">
-              Tra cứu nhanh đáp án của bạn, đáp án chuẩn và nhận xét cho từng câu từ Câu 1 đến Câu 40
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <button onclick="setExam1TableFilter('all')" class="px-3 py-1 rounded-lg text-xs font-bold ${exam1TableFilter === 'all' ? 'bg-sky-600 text-white' : 'bg-slate-800 text-slate-300 border border-slate-700'}">
-              Tất cả (40)
-            </button>
-            <button onclick="setExam1TableFilter('fix')" class="px-3 py-1 rounded-lg text-xs font-bold ${exam1TableFilter === 'fix' ? 'bg-rose-600 text-white' : 'bg-slate-800 text-rose-300 border border-slate-700'}">
-              Cần sửa (13)
-            </button>
-            <button onclick="setExam1TableFilter('correct')" class="px-3 py-1 rounded-lg text-xs font-bold ${exam1TableFilter === 'correct' ? 'bg-emerald-600 text-white' : 'bg-slate-800 text-emerald-300 border border-slate-700'}">
-              Đã làm Đúng (27)
-            </button>
-          </div>
-        </div>
-
-        <div class="overflow-x-auto max-h-96 overflow-y-auto border border-slate-800 rounded-xl">
-          <table class="w-full text-left border-collapse text-xs">
-            <thead class="bg-slate-900 text-slate-300 sticky top-0">
-              <tr class="border-b border-slate-700">
-                <th class="p-2.5">Câu</th>
-                <th class="p-2.5">Chuyên đề</th>
-                <th class="p-2.5">Bài làm của bạn</th>
-                <th class="p-2.5">Đáp án chuẩn</th>
-                <th class="p-2.5">Trạng thái</th>
-                <th class="p-2.5">Ghi chú & Hướng tư duy</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-800 text-slate-200">
-              ${tableQuestions.map(item => {
-                const rowBg = item.q === 15
-                  ? 'bg-emerald-950/30'
-                  : (item.status === 'wrong' ? 'bg-rose-950/20' : (item.status === 'partial' ? 'bg-amber-950/20' : ''));
-                const stBadge = item.status === 'correct'
-                  ? '<span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">✓ Đúng</span>'
-                  : (item.status === 'partial'
-                    ? '<span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">⚠️ Đúng 1 phần</span>'
-                    : '<span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 font-bold">✗ Sai</span>');
-                return `
-                  <tr class="${rowBg} hover:bg-slate-900/80">
-                    <td class="p-2.5 font-extrabold text-white">Câu ${item.q}</td>
-                    <td class="p-2.5 text-sky-300 font-semibold">${item.topic}</td>
-                    <td class="p-2.5 font-bold ${item.status === 'correct' ? 'text-emerald-300' : 'text-rose-300'}">${item.userAns}</td>
-                    <td class="p-2.5 font-bold text-emerald-400">${item.correctAns}</td>
-                    <td class="p-2.5">${stBadge}</td>
-                    <td class="p-2.5 text-slate-300 max-w-md">${item.status === 'correct' && item.q !== 15 ? item.thinking : item.mistake}</td>
-                  </tr>
-                `;
-              }).join('')}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    `;
-
-    if (window.renderMathInElement) {
-      renderMathInElement(reviewBox, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
-        ],
-        throwOnError: false
-      });
-    }
-    return;
+  const count = document.querySelectorAll('#viewSec3 .graded').length;
+  document.getElementById('gradedTitle').textContent = count+' đề đã chữa';
+  document.getElementById('statExamProgress').textContent = count+' đề đã chữa';
+  document.getElementById('navSec3Btn').textContent = 'Phần 3 · Chữa đề và lỗ hổng ('+count+' đề)';
+  const records = document.getElementById('personalRecords');
+  records.replaceChildren();
+  for(const entry of userSubmittedExams.filter(e=>e.id!==defaultExam1Obj.id)){
+    const line=document.createElement('p');
+    line.textContent=[entry.title,entry.score,entry.fixNotes].join(' · ');
+    records.append(line);
   }
-
-  reviewBox.innerHTML = `
-    <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-800 pb-3">
-      <div>
-        <span class="text-xs font-bold uppercase text-emerald-400">✓ ĐỀ BẠN CUNG CẤP ĐÃ ĐƯỢC LƯU</span>
-        <h4 class="text-base md:text-lg font-extrabold text-white mt-0.5">${curEx.title}</h4>
-      </div>
-      <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-800 text-sky-300 border border-slate-700">
-        Kết quả: ${curEx.score}
-      </span>
-    </div>
-    <div class="bg-amber-950/30 border-l-4 border-amber-400 p-3.5 rounded-r-xl space-y-1">
-      <div class="text-xs font-bold uppercase text-amber-300">📌 Những ý cần sửa & Lỗ hổng kiến thức rút ra từ đề này:</div>
-      <p class="text-xs md:text-sm text-slate-200 leading-relaxed">${curEx.fixNotes}</p>
-    </div>
-  `;
 }
-
+document.getElementById('viewSec3').addEventListener('click',event=>{
+  const btn=event.target.closest('button[data-choice]');
+  if(btn) btn.parentElement.querySelector('output').textContent=btn.dataset.choice==='1'?'Đúng. Mở lời giải để đối chiếu.':'Thử lại hoặc mở lời giải để xem bước đầu tiên.';
+});
+function openExamLink(){
+  const key=location.hash.slice(1);
+  if(!['de-3','de-1','chua-de'].includes(key)) return;
+  switchMainView('sec3');
+  if(key!=='chua-de') document.getElementById(key).open=true;
+}
+window.addEventListener('hashchange',openExamLink);
+window.addEventListener('load',openExamLink);
 // Handle saving a user-submitted exam log in Section 3
 document.getElementById('saveExamLogBtn').addEventListener('click', () => {
   const exNum = parseInt(document.getElementById('logExamSelect').value, 10);
